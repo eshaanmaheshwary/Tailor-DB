@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="700.0" minWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="tableviewAll.TableViewAllController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc31d" height="62.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" width="800.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fabc49" height="62.0" layoutY="638.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" width="800.0" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="16.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="751.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="16.0" layoutY="649.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="751.0" layoutY="649.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="125.0" layoutY="11.0" text="MEASUREMENTS TABLE VIEW" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="185.0" layoutY="649.0" text="BANGALORE TAILORING" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="18.0" layoutY="82.0" text="WORKER" textFill="#0f00ff">
+         <font>
+            <Font name="Cambria Bold" size="33.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <ComboBox fx:id="comboChooseW" layoutX="170.0" layoutY="86.0" prefHeight="34.0" prefWidth="258.0" promptText="Choose Worker" />
+      <ComboBox fx:id="comboChooseS" layoutX="444.0" layoutY="85.0" prefHeight="34.0" prefWidth="212.0" promptText="Choose Status" />
+      <Button layoutX="674.0" layoutY="86.0" mnemonicParsing="false" onAction="#doFetch" prefHeight="34.0" prefWidth="110.0" text="FETCH">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutY="135.0" prefHeight="13.0" prefWidth="800.0" />
+      <Label layoutX="14.0" layoutY="151.0" text="Customer Mobile" textFill="#a200ed">
+         <font>
+            <Font name="Cambria Bold" size="33.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <TextField fx:id="txtMobile" layoutX="14.0" layoutY="192.0" prefHeight="34.0" prefWidth="266.0" promptText="Enter Customer Mobile" />
+      <Button layoutX="307.0" layoutY="191.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="34.0" prefWidth="110.0" text="SEARCH">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="446.0" layoutY="191.0" mnemonicParsing="false" onAction="#doFullTable" prefHeight="34.0" prefWidth="343.0" text="SHOW FULL TABLE DATA">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutX="-1.0" layoutY="239.0" prefHeight="13.0" prefWidth="800.0" />
+      <Label layoutX="18.0" layoutY="253.0" text="Deadline" textFill="#249701">
+         <font>
+            <Font name="Cambria Bold" size="33.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <DatePicker fx:id="dpDeadline" layoutX="177.0" layoutY="257.0" prefHeight="34.0" prefWidth="258.0" promptText="Choose Due Date" />
+      <Button layoutX="467.0" layoutY="257.0" mnemonicParsing="false" onAction="#doGetAll" prefHeight="34.0" prefWidth="110.0" text="GET ALL">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutX="5.0" layoutY="298.0" prefHeight="13.0" prefWidth="800.0" />
+      <TableView fx:id="tblAll" layoutX="16.0" layoutY="319.0" prefHeight="306.0" prefWidth="772.0" />
+   </children>
+</AnchorPane>

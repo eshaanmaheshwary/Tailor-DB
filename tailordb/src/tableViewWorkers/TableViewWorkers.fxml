@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tableViewWorkers.TableViewWorkersController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc41f" height="57.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" width="700.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc41f" height="57.0" layoutY="644.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" width="700.0" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="653.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="653.0" layoutY="652.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="652.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/images%20(1).png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblWorkers" layoutX="10.0" layoutY="201.0" prefHeight="430.0" prefWidth="678.0" />
+      <Label layoutX="148.0" layoutY="650.0" text="BANGALORE TAILORING" textFill="RED">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="146.0" layoutY="6.0" text="WORKERS STATUS VIEW" textFill="RED">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="310.0" layoutY="134.0" />
+      <Button layoutX="279.0" layoutY="94.0" mnemonicParsing="false" onAction="#doShowAll" prefHeight="57.0" prefWidth="158.0" text="SHOW ALL">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="38.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/scissors-tailor-logo-template_72843-113.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="564.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/scissors-tailor-logo-template_72843-113.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
